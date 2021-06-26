@@ -29,10 +29,7 @@ function draw() {
   text("Instructions:",20, 35);
   textSize(15);
   text("Up Arrow = Brushing",20, 55);
-  text("Down Arrow = Gymming",20, 70);
-  text("Left Arrow = Eating",20, 85);
-  text("Right Arrow = Bathing",20, 100);
-  text("m key = Moving",20, 115);
+ //give remaining texts also
   
   edges=createEdgeSprites();
   astronaut.bounceOff(edges);
@@ -46,35 +43,9 @@ function draw() {
   }
   
   if(keyDown("DOWN_ARROW")){
-    astronaut.addAnimation("gymming", gym);
-    astronaut.changeAnimation("gymming");
-    astronaut.y = 350;
-    astronaut.velocityX = 0;
-    astronaut.velocityY = 0;
+    //fill the code
   }
   
-  if(keyDown("LEFT_ARROW")){
-    astronaut.addAnimation("eating", eat);
-    astronaut.changeAnimation("eating");
-    astronaut.x = 150;
-    astronaut.y = 350;
-    astronaut.velocityX = 0.5;
-    astronaut.velocityY = 0.5;
-  }
-  
-  if(keyDown("RIGHT_ARROW")){
-    astronaut.addAnimation("bathing", bath);
-    astronaut.changeAnimation("bathing");
-    astronaut.x = 300;
-    astronaut.velocityX = 0;
-    astronaut.velocityY = 0;
-  }
-
-  if(keyDown("m")){
-    astronaut.addAnimation("moving", move);
-    astronaut.changeAnimation("moving");
-    astronaut.velocityX = 1;
-    astronaut.velocityY = 1;
-  }
+ //fill code for remaining keydown's
 
 }
